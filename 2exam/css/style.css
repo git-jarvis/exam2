@@ -1,0 +1,143 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+h1,h2,h3{
+    font-family: "Montserrat", sans-serif;
+}
+header{
+    background-color: #125784;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+#global-header > div > img{
+    height: 150px;
+    width: auto; 
+    margin-left: 30px;
+    padding: 2%;
+}
+menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+li{
+    margin-left: 30px;
+    font-size: 1.2em;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+p{
+    color: white;
+}
+#search{
+    margin-right: 30px;
+}
+#search-input {
+    flex-grow: 1;
+    padding: 8px;
+    font-size: 16px;
+}
+#search-bar > ::placeholder{
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-style: bold;
+    opacity: 5;
+}
+.image-container {
+    height: 500px;
+    width: auto;
+    background-image: url('../img/img1.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+.text-tag{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+.container-2{
+    display: flex;
+    flex-direction: row;
+}
+.container-2 > div:nth-child(1){
+    background-color: #f57f17;
+    height: 250px;
+}
+.container-2 > div:nth-child(1) > p{
+    margin-left: 30px;
+    text-align: left;
+    justify-content: center;
+}
+#ex{
+    height: 250px;
+    width: auto;
+}
+h2{
+    padding: 2%;
+    color: #fff;
+}
+.img_gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.img_gallery >div > img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.radio-option {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 10px;
+    color: white
+}
+.radio-option > p{
+    margin-top: 2% ;
+    margin-bottom: 2%;
+}
+.radio-option input[type="radio"] {
+    margin-right: 10px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2% 30% 2% 30%;
+    background-color: #5e35b1;
+}
+.submit-button{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 3%;
+    border: 1px solid #ccc;
+    
+}
+::placeholder {
+    color: #333;
+    font-style: bold; 
+    opacity: 2.5; 
+    font-style: "Montserrat";
+}
